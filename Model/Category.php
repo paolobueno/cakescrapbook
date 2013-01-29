@@ -5,5 +5,5 @@ App::uses('AppModel', 'Model');
  *
  */
 class Category extends AppModel {
-
+  var $displayField = 'descricao';
 }

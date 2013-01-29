@@ -31,6 +31,9 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
+  Router::connect('/batatinhas/*', array('controller' => 'categories', 'action' => 'add'));
+  Router::connect('/batatinhas/:action/*', array('controller' => 'categories'));
+  Router::connect('/batatinhas/:action/:id/*', array('controller' => 'categories'));
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

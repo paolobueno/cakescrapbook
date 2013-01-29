@@ -31,7 +31,6 @@
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
-		echo $this->fetch('script');
 	?>
 </head>
 <body>
@@ -55,5 +54,10 @@
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+	<?php	echo $this->fetch('script'); ?>
+
+	<footer>
+		<?php echo $this->fetch('footer'); ?>
+	</footer>
 </body>
 </html>
